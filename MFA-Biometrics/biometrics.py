@@ -1,0 +1,1 @@
+print("Biometric system starting...")
