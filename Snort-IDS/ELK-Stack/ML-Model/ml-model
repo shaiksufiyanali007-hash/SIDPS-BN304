@@ -1,0 +1,8 @@
+# Machine Learning Anomaly Detection
+
+Isolation Forest algorithm was used to identify suspicious login patterns and abnormal activity.
+
+The model analyzed:
+- Failed login attempts
+- Unusual access timing
+- Suspicious behavior patterns
