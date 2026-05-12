@@ -18,6 +18,9 @@ face_status.txt	Stores face detection results
 System Implementation
 The authentication system was developed as a Flask‑based web application with three security layers. Access is granted only after all three steps are successfully completed.
 
+
+![Secure Login Portal](image-1.png)
+
 1. Username and Password Login
 Running app.py generates a local link such as:
 
@@ -31,6 +34,8 @@ Incorrect credentials: Displays an error message and logs the failed attempt in 
 
 This forms the first layer of authentication.
 
+
+![OTP Verification](image-2.png)
 2. OTP Verification (Google Authenticator)
 The second layer uses Time‑Based One‑Time Passwords (TOTP) generated through Google Authenticator.
 
@@ -48,6 +53,8 @@ Incorrect: Access is denied and logged
 
 This layer ensures that even if a password is compromised, attackers cannot log in without the OTP.
 
+
+![Succesfull Face Detection](image-3.png)
 3. Biometric Face Verification (OpenCV)
 The final layer uses OpenCV to detect and verify a user’s face.
 
