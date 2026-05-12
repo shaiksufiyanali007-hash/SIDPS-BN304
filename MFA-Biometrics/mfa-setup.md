@@ -7,3 +7,9 @@ Users must provide:
 - One-Time Password (OTP)
 
 This improves authentication security and reduces unauthorized access attempts.
+
+Our secret key for instance is: JBSWY3DPEHPK3PXP
+Add this key to Google Authenticator manually.
+QR code saved as mfa_qr.png
+
+![Google Authenticator](image.png)
