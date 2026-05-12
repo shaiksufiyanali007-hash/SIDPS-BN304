@@ -16,6 +16,10 @@ Router‑on‑a‑Stick	Inter‑VLAN routing using sub‑interfaces
 Static IP Addressing	Device identification and gateway configuration
 Ping / CLI Commands	Connectivity testing and verification
 
+# Cisco Packet Tracer Simulation 
+
+![Cisco Gif](<Cisco Packet Tracer .gif>)
+
 
 System Implementation
 The network was implemented using a structured, multi‑layer design. Traffic is segmented into two VLANs, transported over trunk links, and routed through sub‑interfaces on the router. Access between VLANs is controlled and monitored to support SIDPS security requirements.
