@@ -1,0 +1,77 @@
+# router.txt
+
+enable
+configure terminal
+
+interface GigabitEthernet0/0
+ no shutdown
+
+interface GigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.10.1 255.255.255.0
+
+interface GigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 192.168.20.1 255.255.255.0
+
+end
+write memory
+
+switch0.txt
+Code
+enable
+configure terminal
+
+vlan 10
+ name STUDENTS
+
+vlan 20
+ name STAFF
+
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 10
+
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 10
+
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+
+end
+write memory
+
+# switch1.txt
+enable
+configure terminal
+
+vlan 10
+ name STUDENTS
+
+vlan 20
+ name STAFF
+
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 20
+
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 20
+
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+
+end
+write memory
+verification_commands.txt
+
+# VLAN Config
+show vlan brief
+show interfaces trunk
+show ip interface brief
+ping 192.168.10.1
+ping 192.168.20.1
