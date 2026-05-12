@@ -1,5 +1,7 @@
-Network Security and Design
-BN304 – Project 2: VLAN Segmentation and Inter‑VLAN Routing for School SIDPS
+# Network Security and Design
+
+# BN304 – Project 2: VLAN Segmentation and Inter‑VLAN Routing for School SIDPS
+
 Overview
 For BN304 Project 2, we designed and deployed the network infrastructure for the School Intrusion Detection and Prevention System (SIDPS) using Cisco Packet Tracer. The goal was to implement secure network segmentation through VLANs and enable controlled communication between user groups. This design supports SIDPS by reducing unnecessary broadcast traffic, isolating sensitive staff systems, and preventing unauthorized lateral movement within the school network.
 
