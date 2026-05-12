@@ -83,15 +83,18 @@ The following screenshots were captured as proof of configuration and functional
 <video controls src="Cisco Network Simulation .mp4" title="Cisco Simulation"></video>
 
 
-VLAN configuration
+
 ![VLAN](image.png)
 
-Router interface configuration.
+
 ![Router Interface](image-1.png)
 
-Successful ping testing.
+
 ![Ping Testing](image-2.png)
 
+
 # SIDPS System Flow
+
+
 
 ![System WorkFlow](image-3.png)
