@@ -1,3 +1,5 @@
+# Biometric Authentication
+# BN304 – Project 2: Authentication Module for School SIDPS
 Overview
 For BN304 Project 2, we implemented the authentication module of the School Network Intrusion Detection and Prevention System (SIDPS). Security features such as Multi‑Factor Authentication (MFA) and biometric verification were essential to prevent unauthorized users from impersonating parents, guardians, or school staff. Strengthening identity verification directly supports SIDPS’s goal of protecting school communication systems from impersonation‑based cyber threats.
 
@@ -16,9 +18,8 @@ face_status.txt	Stores face detection results
 System Implementation
 The authentication system was developed as a Flask‑based web application with three security layers. Access is granted only after all three steps are successfully completed.
 
-<p align="center">
-<img src="images/image-1.png" width="750">
-</p>
+
+![Secure Login Portal](image-1.png)
 
 1. Username and Password Login
 Running app.py generates a local link such as:
@@ -33,10 +34,8 @@ Incorrect credentials: Displays an error message and logs the failed attempt in 
 
 This forms the first layer of authentication.
 
-<p align="center">
-<img src="images/image-2.png" width="750">
-</p>
 
+![OTP Verification](image-2.png)
 2. OTP Verification (Google Authenticator)
 The second layer uses Time‑Based One‑Time Passwords (TOTP) generated through Google Authenticator.
 
@@ -54,10 +53,8 @@ Incorrect: Access is denied and logged
 
 This layer ensures that even if a password is compromised, attackers cannot log in without the OTP.
 
-<p align="center">
-<img src="images/image-3.png" width="750">
-</p>
 
+![Succesfull Face Detection](image-3.png)
 3. Biometric Face Verification (OpenCV)
 The final layer uses OpenCV to detect and verify a user’s face.
 
