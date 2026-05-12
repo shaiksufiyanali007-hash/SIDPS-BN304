@@ -1,3 +1,6 @@
+
+SIDPS-BN304 Network Security and Design
+
 1. Introduction
 This project presents the design and deployment of a school network using Cisco Packet Tracer. The network follows a hierarchical architecture consisting of four end‑user PCs, two Layer 2 switches, and one router. The primary objective is to demonstrate secure network segmentation using VLANs and controlled inter‑VLAN communication through a Router‑on‑a‑Stick configuration. This approach reflects real‑world enterprise requirements for security, scalability, and efficient traffic management.
 
